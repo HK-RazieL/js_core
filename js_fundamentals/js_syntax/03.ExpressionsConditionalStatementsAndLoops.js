@@ -107,5 +107,120 @@ function triangleOfDollars (input) {
 }
 
 function moviePrices (input) {
+    let day = input[1].toLowerCase();
+
+    let theGodfather = 0;
+    let schindlersList = 0;
+    let casablanca = 0;
+    let theWizardOfOz = 0;
+
+    switch(day){
+        case "monday":
+            theGodfather = 12;
+            schindlersList = 8.50;
+            casablanca = 8;
+            theWizardOfOz = 10;
+            break;
+        case "tuesday":
+            theGodfather = 10;
+            schindlersList = 8.50;
+            casablanca = 8;
+            theWizardOfOz = 10;
+            break;
+        case "wednesday":
+            theGodfather = 15;
+            schindlersList = 8.50;
+            casablanca = 8;
+            theWizardOfOz = 10;
+            break;
+        case "thursday":
+            theGodfather = 12.5;
+            schindlersList = 8.50;
+            casablanca = 8;
+            theWizardOfOz = 10;
+            break;
+        case "friday":
+            theGodfather = 15;
+            schindlersList = 8.50;
+            casablanca = 8;
+            theWizardOfOz = 10;
+            break;
+        case "saturday":
+            theGodfather = 25;
+            schindlersList = 15;
+            casablanca = 10;
+            theWizardOfOz = 15;
+            break;
+        case "sunday":
+            theGodfather = 30;
+            schindlersList = 15;
+            casablanca = 10;
+            theWizardOfOz = 15;
+            break;
+        default:
+            theGodfather = "error";
+            schindlersList = "error";
+            casablanca = "error";
+            theWizardOfOz = "error";
+            break;
+    }
+    let movie = input[0].toLowerCase();
+
+    if (movie === "the godfather") {
+        return theGodfather;
+    } else if (movie === "schindler's list") {
+        return schindlersList;
+    } else if (movie === "casablanca") {
+        return casablanca;
+    } else if (movie === "the wizard of oz") {
+        return theWizardOfOz;
+    } else {
+        return "error";
+    }
+}
+
+function quadraticEquation (a, b, c) {
+    if (Math.pow(b , 2) - (4 * a * c) > 0){
+        let resultOne = (-b + (Math.sqrt(Math.pow(b , 2) - (4 * a * c)))) / (2 * a);
+        let resultTwo = (-b - (Math.sqrt(Math.pow(b , 2) - (4 * a * c)))) / (2 * a);
+        console.log(Math.min(resultOne, resultTwo));
+        console.log(Math.max(resultOne, resultTwo));
+
+    } else if (Math.pow(b , 2) - (4 * a * c) === 0) {
+        let resultOne = -b / (2 * a);
+        console.log(resultOne);
+    } else if (Math.pow(b , 2) - (4 * a * c) < 0) {
+        console.log("No");
+    }
 
 }
+
+function multiplicationTable (input) {
+    console.log('<table border=\"1\">');
+    let row = "";
+    for (let i = 0; i <= input; i++) {
+        row += "<tr>";
+
+        if (i !== 0){
+            row += `<th>${i}</th>`;
+
+            for (let j = 1; j <= input; j++) {
+                row += `<td>${j * i}</td>`;
+            }
+
+        } else {
+            row += `<th>x</th>`;
+
+            for (let k = 1; k <= input; k++) {
+                row += `<th>${k}</th>`;
+
+            }
+        }
+
+        row += "</tr>";
+        console.log(row);
+        row = "";
+    }
+    console.log('</table>');
+}
+
