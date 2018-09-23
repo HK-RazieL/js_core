@@ -224,3 +224,35 @@ function multiplicationTable (input) {
     console.log('</table>');
 }
 
+
+function figureOf4Squares(input) {
+    if (input===2){
+        console.log("+++")
+        return;
+    }
+    let kindOfLine = (num, str1, str2) => {
+        let result = "";
+        for (let i = 2; i < num; i++) {
+            result += str2;
+        }
+        result += str1;
+        return result;
+    };
+
+    let firstKindOfLine = "+" +
+        kindOfLine(input, "+", "-") +
+        kindOfLine(input, "+", "-");
+    let secondKindLine = "|" +
+        kindOfLine(input, "|", " ") +
+        kindOfLine(input, "|", " ");
+
+    console.log(firstKindOfLine);
+    for (let i = 2; i < Number(input)/2; i++) {
+        console.log(secondKindLine);
+    }
+    console.log(firstKindOfLine);
+    for (let i = 2; i < Number(input)/2; i++) {
+        console.log(secondKindLine);
+    }
+    console.log(firstKindOfLine);
+}
