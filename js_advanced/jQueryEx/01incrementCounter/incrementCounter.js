@@ -19,12 +19,12 @@ function increment(selector) {
 
     $(incrementBtn).on("click", () => {
         textArea.val(+textArea.val() + 1);
-    });
+});
 
     $(addBtn).on("click", () => {
-       let li = $(`<li>${textArea.val()}</li>`);
-       li.appendTo(list);
-    });
+        let li = $(`<li>${textArea.val()}</li>`);
+    li.appendTo(list);
+});
 
     textArea.appendTo(fragment);
     incrementBtn.appendTo(fragment);
