@@ -26,13 +26,9 @@ function capitalizeTheWords(input) {
 }
 
 function captureTheNumbers(input) {
-    let numbers = input.join(" ").match(/\d+/g);
-    console.log(numbers.join(" "));
+    return input.join(" ").match(/\d+/g).join(" ");
 }
 
 function findVariableNamesInSentences(input) {
-    let words = input.match(/\b_[A-Za-z\d]+\b/g);
-    console.log(words.join().replace(/_/g, ""));
+    return input.match(/\b_[A-Za-z\d]+\b/g).join().replace(/_/g, "");
 }
-
-findVariableNamesInSentences("__invalidVariable _evenMoreInvalidVariable __validVariable");

@@ -126,34 +126,28 @@ function validityChecker(input) {
 function treasureLocation(input) {
     let locations = [].concat(input);
 
-    // let tonga = [0, 2, 6, 8];
-    // let tuvalu = [1, 3, 1, 3];
-    // let samoa = [5, 7, 3, 6];
-    // let cook = [4, 9, 7, 8];
-    // let tokelau = [8, 9, 0, 1];
+    let islands = {
+        Tonga: [0, 2, 6, 8],
+        Tuvalu: [1, 3, 1, 3],
+        Samoa: [5, 7, 3, 6],
+        Cook: [4, 9, 7, 8],
+        Tokelau: [8, 9, 0, 1]
+    };
 
-    let islands =
-        {
-            tonga: [0, 2, 6, 8],
-            tuvalu: [1, 3, 1, 3],
-            samoa: [5, 7, 3, 6],
-            cook: [4, 9, 7, 8],
-            tokelau: [8, 9, 0, 1]
-        };
-
-    let i = 0;
-    let treasureHunter = Object.values(islands).forEach((island) => {
-        if (locations[i] >= island[0] && locations[i] <= island[1] && locations[i + 1] >= island[2] && locations[i + 1] <= island[3]) {
-            console.log(island);
-        } else {
-            console.log("On the bottom of the ocean");
-        }
-        i += 2;
-    });
+    for (let i = 0; i < locations.length - 1; i += 2) {
+        let counter = 0;
+        let treasureHunter = Object.keys(islands).forEach((islandName, j) => {
+            let island = islands[islandName];
+            if (locations[i] >= island[0] && locations[i] <= island[1] && locations[i + 1] >= island[2] && locations[i + 1] <= island[3]) {
+                console.log(islandName);
+                counter++;
+            } else if (j === Object.keys(islands).length - 1 && counter === 0) {
+                console.log("On the bottom of the ocean");
+                counter = 0;
+            }
+        });
+    }
 }
-
-// treasureLocation([4, 2, 1.5, 6.5, 1, 3]);
-
 
 function solve(input) {
     let [x1, y1, x2, y2, x3, y3] = input;
