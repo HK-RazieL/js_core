@@ -1,19 +1,40 @@
 function timer() {
-    let time = setInterval((
-        $("#start-timer").on("click", () => {
-            $("#seconds").val($("#seconds").val() + 1);
+    let seconds = $('#seconds');
+    let minutes = $('#minutes');
+    let hours = $('#hours');
 
-            if ($("#seconds").val() === 60){
-                $("#seconds").val(0);
-                $("#minutes").val($("#minutes").val() + 1);
+    let interval = null;
+    let startTimer = $('#start-timer').on('click',start);
+    let stopTimer = $('#stop-timer').on('click',stop);
 
-                if($("#minutes").val() === 60) {
-                    $("#minutes").val(0);
-                    $("#hours").val($("#hours").val() + 1);
-                }
+
+    function start() {
+        if(interval === null){
+            interval = setInterval(updateTime,1000);
+        }
+    }
+
+    function stop() {
+        if(interval !== null){
+            clearInterval(interval);
+            interval = null;
+        }
+    }
+
+    function updateTime() {
+        let currentSecond = Number(seconds.text()) + 1;
+        if (currentSecond === 60) {
+            currentSecond = 0;
+
+            let currentMinute = Number(minutes.text()) + 1;
+            if (currentMinute === 60) {
+                currentMinute = 0;
+                hours.text(('0' + Number(hours.text()) + 1).slice(-2));
             }
-        })
-    ), 1000);
 
-    $("#stop-timer").on("click", clearInterval(time));
+            minutes.text(('0' + currentMinute).slice(-2));
+        }
+
+        seconds.text(('0' + currentSecond).slice(-2));
+    }
 }
