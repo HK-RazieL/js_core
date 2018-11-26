@@ -1,29 +1,26 @@
-async function attachEvents() {
+function attachEvents() {
     let button = document.getElementById("submit");
 
-    button.addEventListener("click", function () {
+    button.addEventListener("click", async function () {
         let field = document.getElementById("location").value;
         let cityUrl = "https://judgetests.firebaseio.com/locations/.json";
         let locationCode;
+        let forecastField = document.getElementById("forecast");
+        forecastField.removeAttribute("style");
 
-        let test = $.get(cityUrl)
-            .then(getData)
-            .catch(firstError);
+        let data = await $.get(cityUrl);
 
-        function getData(data) {
-            let city = data.find(obj => obj.name === field);
-            locationCode = city.code;
-        }
+        let city = data.find(obj => obj.name === field);
+        locationCode = city.code;
 
-        let todayForecastUrl = `https://judgetests.firebaseio.com/forecast/today/${locationCode}.json`;
-
-        $.get(todayForecastUrl)
-            .then(function (data) {
-                console.log(todayForecastUrl);
-            })
-            .catch(secondError);
+        let todayForecastUrl =  `https://judgetests.firebaseio.com/forecast/today/${locationCode}.json`;
+        let forecastRequest = await $.get(todayForecastUrl);
 
 
+        let threeDayForecastUrl = `https://judgetests.firebaseio.com/forecast/upcoming/${locationCode}.json`;
+        let threeDayForecast = await $.get(threeDayForecastUrl);
+
+        console.log(threeDayForecast);
 
         function firstError() {
             console.log("first get error")
