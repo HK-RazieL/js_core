@@ -48,8 +48,8 @@
       <file leaf-file-name="04mathEnforcer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/04mathEnforcer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="181" column="0" lean-forward="true" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+            <state relative-caret-position="492">
+              <caret line="190" column="0" lean-forward="true" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -163,22 +163,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Mocha.mathEnforcer">
-    <configuration default="false" name="lookupChar.should have a positive index value" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/tests/03charLookup.js</test-file>
-      <test-names>
-        <name value="lookupChar" />
-        <name value="should have a positive index value" />
-      </test-names>
-      <method />
-    </configuration>
     <configuration default="false" name="mathEnforcer functionality.substractTen" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -239,6 +223,23 @@
       <test-names>
         <name value="mathEnforcer functionality" />
         <name value="sum" />
+      </test-names>
+      <method />
+    </configuration>
+    <configuration default="false" name="mathEnforcer functionality.sum.should work with floating number and int" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/tests/04mathEnforcer.js</test-file>
+      <test-names>
+        <name value="mathEnforcer functionality" />
+        <name value="sum" />
+        <name value="should work with floating number and int" />
       </test-names>
       <method />
     </configuration>
@@ -342,19 +343,19 @@
       <item index="0" class="java.lang.String" itemvalue="Mocha.evenOrOdd" />
       <item index="1" class="java.lang.String" itemvalue="Mocha.charLookup" />
       <item index="2" class="java.lang.String" itemvalue="Mocha.mathEnforcer" />
-      <item index="3" class="java.lang.String" itemvalue="Mocha.lookupChar.should have a positive index value" />
-      <item index="4" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.substractTen" />
-      <item index="5" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality" />
-      <item index="6" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.addFive" />
-      <item index="7" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.sum" />
+      <item index="3" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.substractTen" />
+      <item index="4" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality" />
+      <item index="5" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.addFive" />
+      <item index="6" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.sum" />
+      <item index="7" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.sum.should work with floating number and int" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality" />
-        <item index="1" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.addFive" />
-        <item index="2" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.sum" />
-        <item index="3" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.substractTen" />
-        <item index="4" class="java.lang.String" itemvalue="Mocha.lookupChar.should have a positive index value" />
+        <item index="0" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.sum.should work with floating number and int" />
+        <item index="1" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality" />
+        <item index="2" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.addFive" />
+        <item index="3" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.sum" />
+        <item index="4" class="java.lang.String" itemvalue="Mocha.mathEnforcer functionality.substractTen" />
       </list>
     </recent_temporary>
   </component>
@@ -368,17 +369,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541105692371</updated>
-      <workItem from="1541105693778" duration="18203000" />
+      <workItem from="1541105693778" duration="19176000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="mathEnforcer - 2018.11.02 at 12h 00m 18s.xml">
-      <configuration name="mathEnforcer" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="mathEnforcer - 2018.11.02 at 12h 02m 27s.xml">
-      <configuration name="mathEnforcer" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="mathEnforcer - 2018.11.02 at 12h 05m 10s.xml">
       <configuration name="mathEnforcer" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -397,23 +392,30 @@
     <history-entry file="mathEnforcer - 2018.11.02 at 12h 19m 48s.xml">
       <configuration name="mathEnforcer" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="mathEnforcer - 2018.11.02 at 16h 22m 26s.xml">
+      <configuration name="mathEnforcer" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
     <history-entry file="mathEnforcer_functionality - 2018.11.02 at 12h 08m 37s.xml">
       <configuration name="mathEnforcer functionality" configurationId="mocha-javascript-test-runner" />
     </history-entry>
     <history-entry file="mathEnforcer_functionality_addFive - 2018.11.02 at 12h 08m 26s.xml">
       <configuration name="mathEnforcer functionality.addFive" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="mathEnforcer_functionality_sum_should_work_with_floating_number_and_int - 2018.11.02 at 16h 22m 23s.xml">
+      <configuration name="mathEnforcer functionality.sum.should work with floating number and int" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18203000" />
+    <option name="totallyTimeSpent" value="19176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19424744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2751817" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -465,8 +467,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/04mathEnforcer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="181" column="0" lean-forward="true" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+        <state relative-caret-position="492">
+          <caret line="190" column="0" lean-forward="true" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
           <folding />
         </state>
       </provider>

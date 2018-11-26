@@ -178,6 +178,13 @@ describe("mathEnforcer functionality", function () {
         it("should work with floating numbers", function () {
             expect(mathEnforcer.sum(0.01, 0.02)).to.be.closeTo(0.03, 0.01, "The function should work with floating numbers!");
         });
-    });
 
+        it("should work with negative floating number and int", function () {
+            expect(mathEnforcer.sum(-1, -0.02)).to.be.closeTo(-1.02, 0.01, "The function should work with floating numbers!");
+        });
+
+        it("should work with floating number and int", function () {
+            expect(mathEnforcer.sum(0.02, 1)).to.be.closeTo(1.02, 0.01, "The function should work with floating numbers!");
+        });
+    });
 });
