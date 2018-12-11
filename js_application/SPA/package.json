@@ -1,0 +1,8 @@
+{
+  "name": "SPA",
+  "version": "0.0.1",
+  "dependencies": {
+    "handlebars": "^4.0.12",
+    "jquery": "^3.3.1"
+  }
+}
