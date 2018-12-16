@@ -41,7 +41,7 @@
             <entry file="file://$PROJECT_DIR$/01.Forecaster/forecaster.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="714">
-                  <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+                  <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
                   <folding>
                     <marker date="1543499599456" expanded="true" signature="1925:2145" ph="..." />
                     <marker date="1543499599456" expanded="true" signature="2029:2035" ph="..." />
@@ -106,6 +106,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -125,7 +126,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,11 +243,12 @@
       <workItem from="1543231921130" duration="6567000" />
       <workItem from="1544274317607" duration="7000" />
       <workItem from="1544465942457" duration="607000" />
+      <workItem from="1544912165975" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22554000" />
+    <option name="totallyTimeSpent" value="22563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1096" extended-state="6" />
@@ -282,6 +283,31 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/01.Forecaster/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01.Forecaster/forecaster.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1543499599456" expanded="true" signature="1925:2145" ph="..." />
+            <marker date="1543499599456" expanded="true" signature="2029:2035" ph="..." />
+            <marker date="1543499599456" expanded="true" signature="2061:2067" ph="..." />
+            <marker date="1543499599456" expanded="true" signature="2561:2567" ph="..." />
+            <marker date="1543499599456" expanded="true" signature="2596:2602" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/01.Forecaster/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -396,7 +422,7 @@
     <entry file="file://$PROJECT_DIR$/01.Forecaster/forecaster.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <marker date="1543499599456" expanded="true" signature="1925:2145" ph="..." />
             <marker date="1543499599456" expanded="true" signature="2029:2035" ph="..." />
